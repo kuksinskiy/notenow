@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.formatOnSave": true,
+	"workbench.editor.labelFormat": "short",
+	"workbench.tree.indent": 16,
+	"explorer.compactFolders": false
+}
