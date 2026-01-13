@@ -1,3 +1,9 @@
+<script lang="ts">
+	let { data } = $props();
+</script>
+
+
+
 <section class="hero bg-base-100 py-30">
 	<div class="lg:flex-row container mx-auto flex flex-col items-center">
 		<div class="lg:w-1/2 lg:text-left text-center">
