@@ -4,4 +4,4 @@
 	let { data }: PageProps = $props();
 </script>
 
-<h1 class="text-4xl">Blog</h1>
+<h1 class="text-4xl">{data.title}</h1>
