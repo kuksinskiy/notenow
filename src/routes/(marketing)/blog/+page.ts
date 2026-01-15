@@ -1,8 +1,10 @@
-import type { PageLoad } from './$types';
+import type { PageLoad } from './$types'
 
 export const load = (async ({ data }) => {
+	const module = data.postType === 1 ? await import('./Post-1.svelte') : await import('./Post-2.svelte')
+	console.log('🌍 Blog Route Universal')
 	return {
 		...data,
-		x: 1
-	};
-}) satisfies PageLoad;
+		component: module.default
+	}
+}) satisfies PageLoad
